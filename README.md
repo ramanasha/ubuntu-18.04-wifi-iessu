@@ -26,9 +26,9 @@ If you are running Ubuntu, then
  sudo apt-get install linux-headers-generic build-essential git
 
 Please note the first paragraph above.
-
-### For all distros:
-### git clone https://github.com/ramanasha/ubuntu-18.04-wifi-iessu.git
+**
+# For all distros:
+# git clone https://github.com/ramanasha/ubuntu-18.04-wifi-iessu.git
 cd rtlwifi_new
 make
 sudo make install
@@ -39,7 +39,7 @@ sudo modprobe <<YOUR WIRELESS DRIVER CODE>>
 If it turns out that your system needs one of the configuration options, then do the following:
 
 sudo vim /etc/modprobe.d/<<YOUR WIRELESS DRIVER CODE>>.conf 
-
+**
 There, enter the line below:
 `options <<YOUR WIRELESS DRIVER CODE>> <<driver_option_name>>=<value>`
 
