@@ -74,4 +74,20 @@ To be safe, do a power off. After the system come back up, rerun the set 1 comam
 The signals are now a lot stronger, you are done. If not, repeat command set 2 with "ant_sel=1".
 If that does not help, I have no idea what is wrong.
 
+ following command in Terminal: lspci -knn | grep Net -A3; rfkill list
+ 
+ 05:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. RTL8723BE PCIe Wireless Network Adapter [10ec:b723]
+DeviceName:  
+Subsystem: Hewlett-Packard Company RTL8723BE PCIe Wireless Network Adapter [103c:81c1]
+Kernel driver in use: rtl8723be
+Kernel modules: wl, rtl8723be
 
+
+# **driver for rtl8723de**
+
+$ git clone -b extended --single-branch https://github.com/lwfinger/rtlwifi_new.git
+unofficial
+$ cd rtlwifi_new
+$ make 
+$ sudo make install
+$ sudo modprobe -v rtl8723de ant_sel=2
