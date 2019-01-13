@@ -35,6 +35,13 @@ sudo make install
 sudo modprobe -r <<YOUR WIRELESS DRIVER CODE>>
 sudo modprobe <<YOUR WIRELESS DRIVER CODE>>
 
+for an example 
+  sudo modprobe -r rtl8723de
+  sudo modprobe rtl8723de
+
+
+
+
 #### Option configuration
 If it turns out that your system needs one of the configuration options, then do the following:
 
