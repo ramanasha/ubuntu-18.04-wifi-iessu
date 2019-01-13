@@ -28,7 +28,7 @@ If you are running Ubuntu, then
 Please note the first paragraph above.
 
 For all distros:
-git clone https://github.com/lwfinger/rtlwifi_new.git
+git clone https://github.com/ramanasha/ubuntu-18.04-wifi-iessu.git
 cd rtlwifi_new
 make
 sudo make install
